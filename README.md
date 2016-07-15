@@ -5,6 +5,7 @@
   * ID选择器
   * 伪类选择器
     + :link
+      >sss
     + :visited
     + :active
     + :hover
