@@ -73,6 +73,7 @@
       > 表示任何被禁用的元素
     
   * [回到顶部](#css-review)
+
 ##格式（可读性）
 
 
@@ -121,9 +122,11 @@
     - style | variant | weight | size/line-height | family
     - `font: italic small-caps bolder 16px/3 cursive;`
   * [回到顶部](#css-review)
+
 ##颜色
   * rgb( 0 ~ 256, 0 ~ 256, 0 ~ 256, 透明度 )
 [回到顶部](#css-review)
+
 ##内容
   * content
     - :before
@@ -147,6 +150,7 @@
       - 两个值指定宽度和高度 `5em 25%`
       - 逗号分隔的多个值设置多重背景 `auto, auto`、`50%, 25%, 25%`、`6px, auto, contain`
    * [回到顶部](#css-review)
+
 ##列表
   * list-style 语法：`<'list-style-type'> || <'list-style-position'> || <'list-style-image'>`
     - list-style-type 语法：`<counter-style> | <string> | none`
@@ -157,6 +161,7 @@
       `counter-increment: mynum;`
       为相同的选择元素初始化计数器
   * [回到顶部](#css-review)
+
 ##盒模型
   * 元素
   * 內边距
@@ -183,6 +188,7 @@
     - `grid`
     - `inline-grid`
   * [回到顶部](#css-review)
+
 ##布局
   * position： `relative`、`absolute`、`fixed`、`static`
   * float
@@ -191,6 +197,7 @@
       - 当应用于浮动元素时，它将元素的外边界移动到所有相关的浮动元素外边界的下方。这会影响后面浮动元素的布局，后面的浮动元素的位置无法高于它之前的元素。
       - 语法： `none | left | right | both | inline-start | inline-end`
   * [回到顶部](#css-review)
+
 ##表格
 
 ##媒体
