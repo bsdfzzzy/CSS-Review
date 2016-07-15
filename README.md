@@ -114,25 +114,68 @@
     - `small-caps`
     - `common-ligatures small-caps`
   * font
-    - /* style | variant | weight | size/line-height | family */     font: italic small-caps bolder 16px/3 cursive;
+    - style | variant | weight | size/line-height | family
+    - `font: italic small-caps bolder 16px/3 cursive;`
 
 ##颜色
-
+  * rgb( 0 ~ 256, 0 ~ 256, 0 ~ 256, 透明度 )
 
 ##内容
-
+  * content
+    - :before
+    - :after
+  * background
+    - `background-image: none` `background-position: 0% 0%` `background-size: auto auto` `background-repeat: repeat` `background-origin: padding-box` `background-clip: border-box` `background-attachment: scroll` `background-color: transparent`
+    - `background-attachment` 决定背景是在视口中固定的还是随包含它的区块滚动的
+      - `scroll`、`fixed`、`local`、`inherit`
+    - `background-clip` 设置元素的背景（背景图片或颜色）是否延伸到边框下面
+      - `border-box`、`padding-box`、`content-box`、`inherit`
+    - `background-color`
+    - `background-image`
+      - `url(http://www.example.com/bck.png);`
+    - `background-position` 指定背景图片的初始位置
+      - `top`、`bottom`、`left`、`right`、`center`、`25% 75%`、`0px 0px, center`
+    - `background-repeat` 指定背景图片是否以平铺效果重复出现，以及重复的方式
+      - `repeat-x`、`repeat-y`、`repeat`、`space`、`round`、`no-repeat`、`双值语法：水平 垂直`
+    - `background-size` 设置背景图片大小
+      - `cover`、`contain`
+      - 一个值指定图片的宽度，高度为auto `50%`、`3em`
+      - 两个值指定宽度和高度 `5em 25%`
+      - 逗号分隔的多个值设置多重背景 `auto, auto`、`50%, 25%, 25%`、`6px, auto, contain`
 
 ##列表
-
+  * list-style 语法：`<'list-style-type'> || <'list-style-position'> || <'list-style-image'>`
+    - list-style-type 语法：`<counter-style> | <string> | none`
+    - list-style-image `url('starsolid.gif');`
+    - list-style-position `inside`、`outside`
+  * counter
+    - `content: counter(mynum) ": ";`
+      `counter-increment: mynum;`
+      为相同的选择元素初始化计数器
 
 ##盒模型
-
+  * 元素
+  * 內边距
+  * 边框
+  * 外边距
+  * dispaly
+    - `none`
+    - `inline` 该元素生成一个或多个行内元素盒。
+    - `block` 该元素生成一个块元素盒。
+    - `list-item` 该元素生成一个容纳内容和单独的列表行内元素盒的块状盒。
+    - `inline-block` 该元素生成一个块状盒，该块状盒随着周围内容流动，如同它是一个单独的行内盒子（表现更像是一个被替换的元素）
+    - ``
 
 ##布局
-
+  * position： `relative`、`absolute`、`fixed`、`static`
+  * float
+    - clear属性指定：一个元素是紧挨着前面的浮动元素，还是必须移动到它们的下面（浮动被清除）。
+      - 当应用于非浮动块时，它将元素的边框边界移动到所有相关浮动元素外边界的下方。这个行为作用时会导致外边距折叠不起作用。
+      - 当应用于浮动元素时，它将元素的外边界移动到所有相关的浮动元素外边界的下方。这会影响后面浮动元素的布局，后面的浮动元素的位置无法高于它之前的元素。
+      - 语法： `none | left | right | both | inline-start | inline-end`
 
 ##表格
 
-
 ##媒体
-
+  * @media
+  * @page
