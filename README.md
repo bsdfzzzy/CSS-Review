@@ -167,16 +167,16 @@
     - `block` 该元素生成一个块元素盒。
     - `list-item` 该元素生成一个容纳内容和单独的列表行内元素盒的块状盒。
     - `inline-block` 该元素生成一个块状盒，该块状盒随着周围内容流动，如同它是一个单独的行内盒子（表现更像是一个被替换的元素）
-    - `table` 这个元素的作用就像  <table> 元素. 它定义了一个块级盒子.
+    - `table` 这个元素的作用就像 table 元素. 它定义了一个块级盒子.
     - `inline-table` 一个table行内元素盒，内部元素是block的
-    - `table-caption` 这个元素的作用的就像<caption> 一样。.
-    - `table-cell` 这个元素的作用就像<td> 一样。
-    - `table-column` 这个元素的作用就像<col> 一样
-    - `table-column-group` 这个元素的作用就像<colgroup> 一样。
-    - `table-footer-group` 这个元素的作用就像<tfoot> 一样.
-    - `table-head-group` 这个元素的作用就像<thead> 一样
-    - `table-row` 这个元素的作用就像<tr> 一样.
-    - `table-row-group` 这个元素的作用就像<tr> 一样.
+    - `table-caption` 这个元素的作用的就像 caption 一样。.
+    - `table-cell` 这个元素的作用就像 td 一样。
+    - `table-column` 这个元素的作用就像 col 一样
+    - `table-column-group` 这个元素的作用就像 colgroup 一样。
+    - `table-footer-group` 这个元素的作用就像 tfoot 一样.
+    - `table-head-group` 这个元素的作用就像 thead 一样
+    - `table-row` 这个元素的作用就像 tr 一样.
+    - `table-row-group` 这个元素的作用就像 tbody 一样.
     - `flex`
     - `inline-flex`
     - `grid`
