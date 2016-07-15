@@ -4,7 +4,7 @@
   * 类选择器
   * ID选择器
   * 伪类选择器
-    >:link
+    + :link
     >:visited
     >:active
     >:hover
