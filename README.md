@@ -1,4 +1,6 @@
 # CSS-Review
+##现在是基础部分
+##[进阶部分](https://github.com/bsdfzzzy/CSS-Review/deeper.md)
 ##目录
  * [选择器](#选择器)
    * [类选择器](#类选择器)
