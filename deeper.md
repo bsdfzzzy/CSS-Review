@@ -5,6 +5,7 @@
   * [优先级策略](#优先级策略)
   * [外边距塌陷](#外边距塌陷)
   * [块格式化上下文](#块格式化上下文)
+  * [层叠上下文](#层叠上下文)
 ##CSS渐变
   * 线性渐变 `linear-gradient`
   * 径向渐变 `radial-gradient`
@@ -64,3 +65,24 @@
 * 表格标题 (元素的 display: table-caption, HTML表格标题默认属性)
 * overflow 的值不为 visible的元素
 * 弹性盒子 flex boxes (元素的 display: flex 或 inline-flex)
+
+##层叠上下文
+文档中的层叠上下文由满足以下任意一个条件的元素形成：
+* 根元素 (HTML),
+* z-index 值不为 "auto"的 绝对/相对定位，
+* 一个 z-index 值不为 "auto"的 flex 项目 (flex item)，即：父元素 display: flex|inline-flex，
+* opacity 属性值小于 1 的元素（参考 the specification for opacity），
+* transform 属性值不为 "none"的元素，
+* mix-blend-mode 属性值不为 "normal"的元素，
+* filter值不为“none”的元素，
+* perspective值不为“none”的元素，
+* isolation 属性被设置为 "isolate"的元素，
+* position: fixed
+* 在 will-change 中指定了任意 CSS 属性，即便你没有直接指定这些属性的值
+* -webkit-overflow-scrolling 属性被设置 "touch"的元素
+在层叠上下文中，其子元素同样也按照上面解释的规则进行层叠。 特别值得一提的是，其子元素的 z-index 值只在父级层叠上下文中有意义。子级层叠上下文被自动视为父级层叠上下文的一个独立单元。
+总结:
+* 给一个 HTML 元素定位和 z-index 赋值创建一个层叠上下文，（opacity 值不为 1 的也是相同）。
+* 层叠上下文可以包含在其他层叠上下文中，并且一起创建一个有层级的层叠上下文。
+* 每个层叠上下文完全独立于它的兄弟元素：当处理层叠时只考虑子元素。
+* 每个层叠上下文是自包含的：当元素的内容发生层叠后，整个该元素将会 在父层叠上下文中 按顺序进行层叠。
