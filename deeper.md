@@ -4,7 +4,7 @@
   * [CSS渐变](#css渐变)
   * [优先级策略](#优先级策略)
   * [外边距塌陷](#外边距塌陷)
-
+  * [块格式化上下文](#块格式化上下文)
 ##CSS渐变
   * 线性渐变 `linear-gradient`
   * 径向渐变 `radial-gradient`
@@ -52,3 +52,15 @@
 ####空块元素
   * 如果块元素的 margin-top 与 margin-bottom 之间没有 border、padding、inline content、height、min-height 来分隔，那么它的上下外边距将会合并。
 ####浮动 及 绝对定位 元素外边距不会合并。
+
+##块格式化上下文
+块格式化上下文是用于决定块盒子的布局及浮动相互影响的一个区域
+下列情况将创建一个块格式化上下文：
+* 根元素或其它包含它的元素
+* 浮动 (元素的 float 不为 none)
+* 绝对定位元素 (元素的 position 为 absolute 或 fixed)
+* 行内块 inline-blocks (元素的 display: inline-block)
+* 表格单元格 (元素的 display: table-cell，HTML表格单元格默认属性)
+* 表格标题 (元素的 display: table-caption, HTML表格标题默认属性)
+* overflow 的值不为 visible的元素
+* 弹性盒子 flex boxes (元素的 display: flex 或 inline-flex)
