@@ -3,6 +3,7 @@
 ##目录
   * [CSS渐变](#css渐变)
   * [优先级策略](#优先级策略)
+  * [外边距塌陷](#外边距塌陷)
 
 ##CSS渐变
   * 线性渐变 `linear-gradient`
@@ -42,3 +43,12 @@
 	</body>
 	<html>
   如上结果，id为box没有class的权重为101,class为box没有id的权重为11,在div里的p权重为12,在div里的div权重最高因为有!important，忽略id的作用，最外面的p标签权重为2
+
+##外边距塌陷
+####毗邻兄弟元素
+  * 毗邻的兄弟元素的外边距会塌陷（当靠后的元素 清除浮动 时除外）。
+####父元素与第一个/最后一个子元素
+  * 如果块元素的 margin-top 与它的第一个子元素的margin-top 之间没有 border、padding、inline content、 clearance 来分隔，或者块元素的 margin-bottom 与它的最后一个子元素的margin-bottom 之间没有 border、padding、inline content、height、min-height、 max-height 分隔，那么外边距会合并(塌陷)。子元素多余的外边距会被父元素的外边距截断。
+####空块元素
+  * 如果块元素的 margin-top 与 margin-bottom 之间没有 border、padding、inline content、height、min-height 来分隔，那么它的上下外边距将会合并。
+####浮动 及 绝对定位 元素外边距不会合并。

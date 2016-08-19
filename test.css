@@ -1,0 +1,21 @@
+.first{
+	background: red;
+	width: 100px;
+	min-height: 20px;
+	margin: 20px !important;
+	float: left;	
+}
+
+.second{
+	background: yellow;
+	width: 100px;
+	min-height: 200px;
+	margin: 50px !important;
+	float: left;
+}
+
+.box{
+	background: rgba(255,255,0,0.6);
+	min-height: 20px;
+	
+}
