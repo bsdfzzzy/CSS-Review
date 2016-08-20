@@ -6,6 +6,7 @@
   * [外边距塌陷](#外边距塌陷)
   * [块格式化上下文](#块格式化上下文)
   * [层叠上下文](#层叠上下文)
+  * [简写属性](#简写属性)
 ##CSS渐变
   * 线性渐变 `linear-gradient`
   * 径向渐变 `radial-gradient`
@@ -86,3 +87,16 @@
 * 层叠上下文可以包含在其他层叠上下文中，并且一起创建一个有层级的层叠上下文。
 * 每个层叠上下文完全独立于它的兄弟元素：当处理层叠时只考虑子元素。
 * 每个层叠上下文是自包含的：当元素的内容发生层叠后，整个该元素将会 在父层叠上下文中 按顺序进行层叠。
+
+##简写属性
+####background
+
+	background: color image repeat position;
+####font
+
+	font: style weight size/line-height family;
+####border
+
+	border: width style color;
+####margin和padding
+	margin/padding: top right bottom left;
